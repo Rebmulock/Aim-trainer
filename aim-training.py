@@ -12,11 +12,11 @@ score = tk.Label(text = points, font = ('Helvetica', 20))
 score.place(x = 500, y = 40)
 
 def emoji():
-    global emote
-    emote = cnv.create_oval(x - 40, y - 40, x + 40, y + 40, width = 5, fill = 'yellow')
+    global circle
+    circle = cnv.create_oval(x - 40, y - 40, x + 40, y + 40, width = 5, fill = 'yellow')
 
 def Delete():
-    cnv.delete(emote)
+    cnv.delete(circle)
 
 def animate():
     global score
